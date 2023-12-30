@@ -6,7 +6,7 @@ At the moment, the defined sequences use these keys.
 
 - the basic latin alphabet a–z, A–Z
 - numbers 0–9
-- symbols on the number row !@#$%^&\*()-=\_+
+- symbols on the number row \`~!@#$%^&\*()-=\_+
 - other basic symbols []{}\\|;:'",./<>?
 - space
 - arrow keys ↑↓←→
@@ -15,7 +15,7 @@ That is, keyboards at the 75% and above size, using the basic English keyboard l
 
 As this is an ongoing project, there will be breaking changes.
 
-### How to use compose sequences in this repo
+### How to use mCompose's sequences
 Some of mCompose's sequences conflict with WinCompose's default ones, so it is recommended you disable WinCompose's default sequences when using mCompose.
 
 1. **Completely disable WinCompose's default sequences**
@@ -38,14 +38,14 @@ There are mainly 4 types of compose sequences in mCompose:
 3. Ungrouped characters are given ad hoc sequences
 4. A few other sequences are defined for easier access ("shortcut sequences")
 
-### prefix
+### Prefix
 Prefixes are defined for each group of characters sharing some common feature.
 
 For example, `ĀāƂƃƋƌĒēḠḡĪīꝈꝉŌōŪūȲȳ` all have "high bars", and for every character in this group, the common prefix `-` is defined. That is, every character's sequence is of the form <kbd>⎄-<var>[base]<var></kbd>, for example <kbd>⎄-G</kbd>→`Ḡ`
 
 Prefixes of difference groups may coincide, but the complete sequences never collide with each other.
 
-### complex compose sequences
+### Complex compose sequences
 The <kbd><var>[base]<var></kbd>, <kbd><var>[char_1]<var></kbd>, <kbd><var>[char_2]<var></kbd> part of compose sequences can be replaced by any compose sequence that composes to that character, creating a complex compose sequence.
 
 For example,
@@ -56,13 +56,13 @@ For example,
 
 Complex compose sequences offers a systematic way to create more complex characters like ǣ with the basic English keyboard layout via composable subparts, while also offering a shorter sequence for users that can type æ without composing.
 
-### shortcut sequences
+### Shortcut sequences
 Some characters by their forms hint at a more ad hoc but intuitive sequence than the systematic one. So we also include those intuitive sequnces in mCompose.
 
 For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/wiki/Ť) but looks more like a small T with an apostrophe, so we also include the sequence <kbd>t'</kbd>→`ť` as a "shortcut sequence".
 
-## sequences (prefix-base form)
-### simple prefixes
+## Sequences (prefix-base form)
+### Simple prefixes
 
 |group|char(s)|prefix|
 |:-:|-|:-:|
@@ -102,7 +102,7 @@ For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/
 |tilde below|Ḛḛ, Ḭḭ, Ṵṵ|<kbd>22</kbd>|
 |tilde middle|ᵬ, ᵭ, ᵮ, Ɫɫ, ᵯ, ᵰ, ᵱ, ᵲ, ᵴ, ᵵ, ᵶ|<kbd>29</kbd>|
 
-### compound prefixes (above+below)
+### Compound prefixes (above+below)
 
 - When diacritics are stacked, we list the diacritics outwards from the base character outwards. First go up ↑ the top half, then down ↓ the bottom half. Then combine the prefixes of each diacritics in that order.
 - "Dot below" in a compound prefix is abbreviated from `..` to just `.`
@@ -145,7 +145,7 @@ For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/
 |tilde + diaeresis|Ṏṏ|<kbd>2;</kbd>|
 |tilde + macron|Ȭȭ|<kbd>2-</kbd>|
 
-### greek
+### Greek
 
 - These are intended to be used as standalone letters (such as symbols in linguistics or mathematics). For inputting whole words and sentences in Greek, a full Greek keyboard layout is recommended.
 - The prefixes for each mode of Greek letters are in the parentheses.
@@ -179,7 +179,7 @@ For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/
 |Yy|upsilon|Ʊʊ|Υυ|
 |Zz|zeta||Ζζ|
 
-### non-conventional prefixes
+### Non-conventional prefixes
 
 |group|char(s)|prefix|
 |:-:|-|:-:|
@@ -195,7 +195,7 @@ For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/
 |small caps|ᴀ, ʙ, ᴄ, ᴅ, ᴇ, ꜰ, ɢ, ʜ, Ɪɪ, ᴊ, ᴋ, ʟ, ᴍ, ɴ, ᴏ, ᴘ, ꞯ, Ʀʀ, ꜱ, ᴛ, ᴜ, ᴠ, ᴡ, ʏ, ᴢ|<kbd><span class="down">↓</span></kbd>|
 |turned|Ɐɐ, Ǝǝ, Ⅎⅎ, ⅁ᵷ, Ɥɥ, ᴉ, Ʞʞ, Ꞁꞁ, Ɯɯ, ɹ, Ʇʇ, Ʌʌ, ʍ, ⅄ʎ|<kbd><span class="backspace">Backspace</span></kbd>|
 
-## sequences (ligatures & digraphs)
+## Sequences (ligatures & digraphs)
 In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 
 |chars|details|sequence|reason|
@@ -234,10 +234,10 @@ In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 |ꭣ|uo|<kbd>u-o</kbd>|to not collide with  <kbd>uo</kbd>→`ŏ`|
 |Ꝡ, ꝡ||<kbd>VY</kbd>, <kbd>vy</kbd>||
 
-## sequences (ad hoc)
+## Sequences (ad hoc)
 In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 
-### latin
+### Latin
 
 |chars|details|sequence|reason|
 |:-:|:-:|:-:|-|
@@ -257,13 +257,13 @@ In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 |Ȝȝ|[Yogh](https://en.wikipedia.org/wiki/Yogh)|<kbd>Y3</kbd>, <kbd>y3</kbd>|from **y**ogh and visual similarity to `3`|
 |Ʒʒ|[Ezh](https://en.wikipedia.org/wiki/Ezh)|<kbd>ZH</kbd>, <kbd>zh</kbd>|`zh` in IPA|
 
-### punctuation
+### Punctuation
 
 |chars|details|sequence|reason|
 |:-:|:-:|:-:|-|
 |·|[middle dot (interpunct)](https://en.wikipedia.org/wiki/Interpunct)|<kbd>.[SPACE]</kbd>|treat `.` as a "prefix" modifying the space|
 
-## sequences (shortcut)
+## Sequences (shortcut)
 In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 
 |char(s)|details|shortcut|systematic|reason|
@@ -273,12 +273,11 @@ In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 |ť|T with caron|<kbd>t'</kbd>|<kbd>vt</kbd>|visual similarity to `t'`|
 |Ʒ, ʒ|[Ezh](https://en.wikipedia.org/wiki/Ezh)|<kbd>Z3</kbd>, <kbd>z3</kbd>|<kbd>ZH</kbd>, <kbd>zh</kbd>|from e**z**h and visual similarity to `3`|
 
-## sequences (complex bases)
+## Sequences (complex bases)
 Both compose sequences using the complex base(s) and the expanded base(s) are included in mCompose. For example, to type `ǿ`, you can either
 
 - type <kbd>⎄'ø</kbd> (if your keyboard layout has `ø`)
 - type <kbd>⎄'⎄/o</kbd> (expand `ø` to <kbd>⎄/o</kbd>)
-
 
 |group|char(s)|base|
 |:-:|-|-|
@@ -300,7 +299,7 @@ Both compose sequences using the complex base(s) and the expanded base(s) are in
 |tilde middle|ꭨ, ᵳ|ɹ, ɾ|
 |turned|ɺ, ᴂ, ᴔ, ꭑ, Ɒɒ|ɼ, æ, œ, ꭐ, Ɑɑ|
 
-## sequences (complex ligatures)
+## Sequences (complex ligatures)
 In all the compose sequences indicated, the leading <kbd>⎄</kbd> is omitted.
 
 Complex characters in the sequence can (but need not) be expanded. For example, to type `ꭦ` you can either
