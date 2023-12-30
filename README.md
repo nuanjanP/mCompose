@@ -104,7 +104,7 @@ For example, `ť` is actually a [small T with a caron](https://en.wikipedia.org/
 
 ### Compound prefixes (above+below)
 
-- When diacritics are stacked, we list the diacritics outwards from the base character outwards. First go up ↑ the top half, then down ↓ the bottom half. Then combine the prefixes of each diacritics in that order.
+- When diacritics are stacked, we list the diacritics outwards from the base character. First go up ↑ the top half, then down ↓ the bottom half. Then combine the prefixes of each diacritics in that order.
 - "Dot below" in a compound prefix is abbreviated from `..` to just `.`
 - "Grave" in a compound prefix can be changed from `` ` `` to `\`
 	- on QWERTY, this gives a right hand key alternative for the prefix
