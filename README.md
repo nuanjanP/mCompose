@@ -29,14 +29,14 @@ Some of mCompose's sequences conflict with WinCompose's default ones, so it is r
 3. You can now use the sequences defined in this repo's <code class="path">.XCompose</code> file.
 
 ## A short summary of mCompose's sequences
+In this README file, the symbol ⎄ denotes the compose key.
+
 There are mainly 4 types of compose sequences in mCompose:
 
 1. Most are in the form <kbd>⎄<var>[prefix]<var><var>[base]<var></kbd>
 2. Ligatures and digraphs are in the form <kbd>⎄<var>[char_1]<var><var>[char_2]<var></kbd>
 3. Ungrouped characters are given ad hoc sequences
 4. A few other sequences are defined for easier access ("shortcut sequences")
-
-In this README file, the symbol ⎄ denotes the compose key.
 
 ### prefix
 Prefixes are defined for each group of characters sharing some common feature.
